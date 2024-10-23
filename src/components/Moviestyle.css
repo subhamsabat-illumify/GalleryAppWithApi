@@ -1,0 +1,156 @@
+.container{
+    margin:5% 10%;
+}
+
+.container h1{
+    font-family: "Lobster", "Josefin Sans", Helvetica, Arial, sans-serif;
+    font-size: 3em;
+    color: #051c33;
+    text-align: center;
+}
+
+.SearchBox{
+    margin:3% 20%;
+}
+
+.search{
+    /* border:2px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.SearchBox input{
+
+    font-size: 1em;
+    width: 80%;
+    background-color: #edeff0;
+    padding: 10px 15px;
+    border: 3px solid #d7dbdf;
+    border-right: none;
+    border-radius: .35em 0 0 .35em;
+    outline: none;
+ 
+ 
+}
+
+.Searchbutton{
+    width:10%;
+    margin:0px 0px;
+    padding:1% 1.5%;
+    color:white;
+    background-color: #051c33;
+    cursor: pointer;
+    font-size: 2em;
+    border-radius: 0 0.35em 0.35em 0 ;
+
+}
+.button{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button button{
+    width:20%;
+    margin:5%;
+    font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+    background: #051c33;
+    border-radius: 3px;
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cards{
+    list-style-type:none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border:5px solid darkgoldenrod; */
+}
+
+.movie-card{
+    width:22%;
+    margin:1% 0%;
+    /* border:2px solid red; */
+    overflow: hidden;
+ 
+}
+
+.movie-card img{
+    width:100%;
+    height:165px;
+    /* object-fit: cover;
+    object-position: top center; */
+    
+  
+}
+
+.movie-card:hover img{
+    transform: scale(1.25);
+    transition: transform 1.25s;
+}
+
+@media screen and (max-width: 900px) {
+    .movie-card{
+        width:30%;
+        margin:2% 0%;
+    }
+    #search{
+        font-size: medium;
+        justify-content: center;
+        align-items: center;
+    }
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    .movie-card{
+        width:40%;
+        margin:5% 5%;
+    }
+    .SearchBox input{
+
+        margin-bottom: 5%;
+        border-right: none;
+    }
+    .search{
+        /* border:2px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .SearchBox input{
+        width:100%;
+        border: 3px solid #d7dbdf;
+        border-radius: .35em;
+     
+    }
+    
+    .Searchbutton{
+        width:50%;
+        margin:5% 20%;
+        border-radius: .35em;
+    
+    }
+
+    .button{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .button button{
+        width:100%;
+        margin:2% 0% 2% 0%;
+    }
+}
+
+    @media screen and (max-width: 480px) {
+        .movie-card{
+            width:60%;
+            margin:5% 20%;
+        }
+    
+  }
